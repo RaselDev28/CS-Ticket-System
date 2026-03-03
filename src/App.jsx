@@ -1,12 +1,17 @@
+import { Suspense } from 'react'
 import './App.css'
+import AllCards from './Components/AllCards/AllCards'
 import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
-import ResolvedTask from './Components/Resolved Task/ResolvedTask'
-import TaskStatus from './Components/Task-status/TaskStatus'
+
+const fetchCards=async ()=>{
+  const res=await fetch("/card.json")
+  return res.json();
+}
 
 function App() {
 
-
+  const fetchPromise=fetchCards();
   return (
     <>
       {/* Navbar */}
@@ -15,11 +20,13 @@ function App() {
       {/* Banner Section */}
       <Banner></Banner>
 
-      {/* Task Status Componant */}
-      <TaskStatus></TaskStatus>
-
-      {/* Resolved Status Componant */}
-      <ResolvedTask></ResolvedTask>
+    {/* All Ticktes */}
+    <Suspense fallback={<div className=" flex items-center justify-center bg-base-100/80 backdrop-blur-sm z-50">
+            <span className="loading loading-spinner loading-xl text-primary"></span>
+          </div>
+}>
+      <AllCards fetchPromise={fetchPromise}></AllCards>
+    </Suspense>
     </>
   )
 }
