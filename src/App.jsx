@@ -1,4 +1,3 @@
-
 import './App.css'
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
             <ul
               tabindex="-1"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-             <li class="hover:bg-[linear-gradient(45deg,#632EE3_0%,#9F62F2_100%)] rounded-[5px]"><a class="hover:text-white" href='#'>FAQ</a></li>
+              <li class="hover:bg-[linear-gradient(45deg,#632EE3_0%,#9F62F2_100%)] rounded-[5px]"><a class="hover:text-white" href='#'>FAQ</a></li>
               <li class="hover:bg-[linear-gradient(45deg,#632EE3_0%,#9F62F2_100%)] rounded-[5px]"><a class="hover:text-white" href='#'>Home</a></li>
               <li class="hover:bg-[linear-gradient(45deg,#632EE3_0%,#9F62F2_100%)] rounded-[5px]"><a class="hover:text-white" href='#'>Changelog</a></li>
               <li class="hover:bg-[linear-gradient(45deg,#632EE3_0%,#9F62F2_100%)] rounded-[5px]"><a class="hover:text-white" href='#'>Blog</a></li>
@@ -40,6 +39,16 @@ function App() {
           </div>
           <a class="btn bg-[linear-gradient(45deg,#632EE3_0%,#9F62F2_100%)] text-white">+ New Ticket</a>
         </div>
+      </div>
+
+      {/* Banner Section */}
+      <div  class="px-2 flex gap-5 py-15">
+      <div class="bg-[linear-gradient(45deg,#632EE3_0%,#9F62F2_100%)] rounded-[10px] text-white text-4xl font-bold w-full py-30 items-center justify-center text-center">
+        <p>In-Progress</p>
+      </div>
+      <div class="bg-[linear-gradient(45deg,#54CF68_0%,#00827A_100%)] rounded-[10px] text-white text-4xl font-bold w-full py-30 items-center justify-center text-center">
+        <p>Resolved</p>
+      </div>
       </div>
 
     </>
