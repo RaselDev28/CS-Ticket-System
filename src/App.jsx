@@ -42,7 +42,7 @@ function App() {
       </div>
 
       {/* Banner Section */}
-      <div  class="px-2 flex gap-5 py-15">
+      <div  class="px-2 flex flex-col sm:flex-row gap-5 py-15">
       <div class="bg-[linear-gradient(45deg,#632EE3_0%,#9F62F2_100%)] rounded-[10px] text-white text-4xl font-bold w-full py-30 items-center justify-center text-center">
         <p>In-Progress</p>
       </div>
