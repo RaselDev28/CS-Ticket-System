@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div class="bg-white">
-            <div class="navbar max-w-[1200px] mx-auto">
+            <div class="navbar max-w-300 mx-auto">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
