@@ -4,7 +4,7 @@ const AllCards = ({ fetchPromise, addToProgress, inProgressTasks, moveToResolved
     const cardsData = use(fetchPromise);
 
     return (
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 p-5">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 ">
             {/* Customer Tickets Section */}
             <div className='flex-1 border-r pr-5'>
                 <h2 className="text-2xl font-bold mb-5">Customer Tickets</h2>
@@ -39,10 +39,10 @@ const AllCards = ({ fetchPromise, addToProgress, inProgressTasks, moveToResolved
 
             {/* Task Section */}
             <div className='w-full lg:w-1/3 space-y-10'>
-                {/* 1. Task Status (In-Progress) */}
+                {/* Task Status (In-Progress) */}
                 <div>
                     <h2 className='text-xl font-bold border-b pb-2'>Task Status</h2>
-                    {inProgressTasks.length === 0 && <p className="text-gray-400 mt-2">Select a ticket to add.</p>}
+                    {inProgressTasks.length === 0 && <p className="text-gray-400 mt-2">Select a ticket to add to Task Status</p>}
                     <div className="space-y-3 mt-4">
                         {inProgressTasks.map(task => (
                             <div key={task.id} className="p-3 bg-blue-50 border rounded-lg items-center">
@@ -58,7 +58,7 @@ const AllCards = ({ fetchPromise, addToProgress, inProgressTasks, moveToResolved
                     </div>
                 </div>
 
-                {/* 3. Resolved Task */}
+                {/* Resolved Task */}
                 <div>
                     <h2 className='text-xl font-bold border-b pb-2'>Resolved Task</h2>
                     {resolvedTasks.length === 0 && <p className="text-gray-400 mt-2">No resolved tasks yet.</p>}

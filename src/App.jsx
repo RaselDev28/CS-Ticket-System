@@ -3,6 +3,7 @@ import './App.css'
 import AllCards from './Components/AllCards/AllCards'
 import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
 
 const fetchCards = async () => {
   const res = await fetch("/card.json")
@@ -33,7 +34,6 @@ function App() {
     <>
       <Navbar></Navbar>
 
-      {/* Banner receives the counts */}
       <Banner
         progressCount={inProgressTasks.length}
         resolvedCount={resolvedTasks.length}
@@ -52,6 +52,7 @@ function App() {
           resolvedTasks={resolvedTasks}
         />
       </Suspense>
+      <Footer></Footer>
     </>
   )
 }

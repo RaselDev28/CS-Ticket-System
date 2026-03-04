@@ -1,137 +1,137 @@
 [
-  {
-    "id": 1,
-    "title": "Login page not loading",
-    "description": "Users are unable to access the login page after the latest deployment.",
-    "customer": "ABC Corporation",
-    "priority": "High",
-    "status": "Open",
-    "createdAt": "2026-03-01"
-  },
-  {
-    "id": 2,
-    "title": "Payment gateway timeout",
-    "description": "Transactions are failing due to timeout errors from the payment provider.",
-    "customer": "Eon Solutions",
-    "priority": "Critical",
-    "status": "In Progress",
-    "createdAt": "2026-03-01"
-  },
-  {
-    "id": 3,
-    "title": "Profile image upload issue",
-    "description": "Users cannot upload profile images larger than 2MB.",
-    "customer": "Global Tech",
-    "priority": "Medium",
-    "status": "Open",
-    "createdAt": "2026-03-01"
-  },
-  {
-    "id": 4,
-    "title": "Dashboard statistics incorrect",
-    "description": "Sales figures displayed on dashboard are not matching backend data.",
-    "customer": "Bright Solutions",
-    "priority": "High",
-    "status": "In Review",
-    "createdAt": "2026-03-01"
-  },
-  {
-    "id": 5,
-    "title": "Email notifications not sent",
-    "description": "System is not sending order confirmation emails to customers.",
-    "customer": "NextGen Retail",
-    "priority": "High",
-    "status": "In Progress",
-    "createdAt": "2026-03-01"
-  },
-  {
-    "id": 6,
-    "title": "Slow page loading",
-    "description": "Product listing page takes more than 10 seconds to load.",
-    "customer": "City Mart",
-    "priority": "Medium",
-    "status": "Open",
-    "createdAt": "2026-03-01"
-  },
-  {
-    "id": 7,
-    "title": "Incorrect invoice generation",
-    "description": "Invoices are showing incorrect tax calculations.",
-    "customer": "Prime Industries",
-    "priority": "Critical",
-    "status": "In Progress",
-    "createdAt": "2026-03-01"
-  },
-  {
-    "id": 8,
-    "title": "Search functionality broken",
-    "description": "Search results are not appearing for valid product names.",
-    "customer": "Tech Bazaar",
-    "priority": "High",
-    "status": "Open",
-    "createdAt": "2026-03-01"
-  },
-  {
-    "id": 9,
-    "title": "Mobile layout misaligned",
-    "description": "UI elements overlap on smaller screen devices.",
-    "customer": "Digital World",
-    "priority": "Low",
-    "status": "In Review",
-    "createdAt": "2026-03-01"
-  },
-  {
-    "id": 10,
-    "title": "Password reset link expired",
-    "description": "Reset password links are expiring immediately after generation.",
-    "customer": "Smart Services",
-    "priority": "Medium",
-    "status": "Resolved",
-    "createdAt": "2026-03-02"
-  },
-  {
-    "id": 11,
-    "title": "Database connection error",
-    "description": "Application intermittently fails to connect to the database server.",
-    "customer": "CloudNet",
-    "priority": "Critical",
-    "status": "Open",
-    "createdAt": "2026-03-02"
-  },
-  {
-    "id": 12,
-    "title": "Report export not working",
-    "description": "Exporting reports to PDF results in corrupted files.",
-    "customer": "Insight Analytics",
-    "priority": "High",
-    "status": "In Progress",
-    "createdAt": "2026-03-02"
-  },
-  {
-    "id": 13,
-    "title": "User role permission issue",
-    "description": "Admin users cannot access restricted management pages.",
-    "customer": "SecureSys",
-    "priority": "High",
-    "status": "Open",
-    "createdAt": "2026-03-02"
-  },
-  {
-    "id": 14,
-    "title": "Session timeout too short",
-    "description": "Users are logged out after 5 minutes of inactivity.",
-    "customer": "EduPlatform",
-    "priority": "Low",
-    "status": "In Review",
-    "createdAt": "2026-03-02"
-  },
-  {
-    "id": 15,
-    "title": "API returning 500 error",
-    "description": "Order API endpoint returns 500 error for bulk requests.",
-    "customer": "MegaStore",
-    "priority": "Critical",
-    "status": "In Progress",
-    "createdAt": "2026-03-02"
-  }
-]   
+    {
+        "id": 1,
+        "title": "Login page not loading",
+        "description": "Users are unable to access the login page after the latest deployment.",
+        "customer": "ABC Corporation",
+        "priority": "High",
+        "status": "Open",
+        "createdAt": "2026-03-01"
+    },
+    {
+        "id": 2,
+        "title": "Payment gateway timeout",
+        "description": "Transactions are failing due to timeout errors from the payment provider.",
+        "customer": "Eon Solutions",
+        "priority": "Critical",
+        "status": "In Progress",
+        "createdAt": "2026-03-01"
+    },
+    {
+        "id": 3,
+        "title": "Profile image upload issue",
+        "description": "Users cannot upload profile images larger than 2MB.",
+        "customer": "Global Tech",
+        "priority": "Medium",
+        "status": "Open",
+        "createdAt": "2026-03-01"
+    },
+    {
+        "id": 4,
+        "title": "Dashboard statistics incorrect",
+        "description": "Sales figures displayed on dashboard are not matching backend data.",
+        "customer": "Bright Solutions",
+        "priority": "High",
+        "status": "In Review",
+        "createdAt": "2026-03-01"
+    },
+    {
+        "id": 5,
+        "title": "Email notifications not sent",
+        "description": "System is not sending order confirmation emails to customers.",
+        "customer": "NextGen Retail",
+        "priority": "High",
+        "status": "In Progress",
+        "createdAt": "2026-03-01"
+    },
+    {
+        "id": 6,
+        "title": "Slow page loading",
+        "description": "Product listing page takes more than 10 seconds to load.",
+        "customer": "City Mart",
+        "priority": "Medium",
+        "status": "Open",
+        "createdAt": "2026-03-01"
+    },
+    {
+        "id": 7,
+        "title": "Incorrect invoice generation",
+        "description": "Invoices are showing incorrect tax calculations.",
+        "customer": "Prime Industries",
+        "priority": "Critical",
+        "status": "In Progress",
+        "createdAt": "2026-03-01"
+    },
+    {
+        "id": 8,
+        "title": "Search functionality broken",
+        "description": "Search results are not appearing for valid product names.",
+        "customer": "Tech Bazaar",
+        "priority": "High",
+        "status": "Open",
+        "createdAt": "2026-03-01"
+    },
+    {
+        "id": 9,
+        "title": "Mobile layout misaligned",
+        "description": "UI elements overlap on smaller screen devices.",
+        "customer": "Digital World",
+        "priority": "Low",
+        "status": "In Review",
+        "createdAt": "2026-03-01"
+    },
+    {
+        "id": 10,
+        "title": "Password reset link expired",
+        "description": "Reset password links are expiring immediately after generation.",
+        "customer": "Smart Services",
+        "priority": "Medium",
+        "status": "Resolved",
+        "createdAt": "2026-03-02"
+    },
+    {
+        "id": 11,
+        "title": "Database connection error",
+        "description": "Application intermittently fails to connect to the database server.",
+        "customer": "CloudNet",
+        "priority": "Critical",
+        "status": "Open",
+        "createdAt": "2026-03-02"
+    },
+    {
+        "id": 12,
+        "title": "Report export not working",
+        "description": "Exporting reports to PDF results in corrupted files.",
+        "customer": "Insight Analytics",
+        "priority": "High",
+        "status": "In Progress",
+        "createdAt": "2026-03-02"
+    },
+    {
+        "id": 13,
+        "title": "User role permission issue",
+        "description": "Admin users cannot access restricted management pages.",
+        "customer": "SecureSys",
+        "priority": "High",
+        "status": "Open",
+        "createdAt": "2026-03-02"
+    },
+    {
+        "id": 14,
+        "title": "Session timeout too short",
+        "description": "Users are logged out after 5 minutes of inactivity.",
+        "customer": "EduPlatform",
+        "priority": "Low",
+        "status": "In Review",
+        "createdAt": "2026-03-02"
+    },
+    {
+        "id": 15,
+        "title": "API returning 500 error",
+        "description": "Order API endpoint returns 500 error for bulk requests.",
+        "customer": "MegaStore",
+        "priority": "Critical",
+        "status": "In Progress",
+        "createdAt": "2026-03-02"
+    }
+]
