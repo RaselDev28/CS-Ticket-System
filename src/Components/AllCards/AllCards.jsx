@@ -1,4 +1,6 @@
 import React, { use } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 const AllCards = ({ fetchPromise, addToProgress, inProgressTasks, moveToResolved, resolvedTasks }) => {
     const cardsData = use(fetchPromise);
@@ -28,7 +30,9 @@ const AllCards = ({ fetchPromise, addToProgress, inProgressTasks, moveToResolved
                                     </div>
                                     <div className='flex gap-2'>
                                         <h4 className='font-bold'>{card.customer}</h4>
-                                        <span>{card.createdAt}</span>
+                                        <span>
+                                            <FontAwesomeIcon icon={faCalendar} />
+                                            {card.createdAt}</span>
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +53,7 @@ const AllCards = ({ fetchPromise, addToProgress, inProgressTasks, moveToResolved
                                 <span className='text-xl'>{task.title}</span>
                                 <button
                                     onClick={() => moveToResolved(task)}
-                                    className="btn btn-xs btn-primary w-full mt-3"
+                                    className="btn btn-xs btn-primary text-base w-full mt-3 py-4"
                                 >
                                     Complete
                                 </button>
@@ -65,7 +69,7 @@ const AllCards = ({ fetchPromise, addToProgress, inProgressTasks, moveToResolved
                     <div className="space-y-3 mt-4">
                         {resolvedTasks.map(task => (
                             <div key={task.id} className="p-3 bg-green-50 border rounded-lg">
-                                <span className="text-gray-500">{task.title}</span>
+                                <span className="text-gray-500 font-bold">{task.title}</span>
                             </div>
                         ))}
                     </div>
