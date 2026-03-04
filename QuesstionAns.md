@@ -7,12 +7,14 @@
 2. What is the difference between State and Props?
    
     Ans: *Props:
+
             1. Passed from parent component to child component.
             2. Read only
             3. Used to send data between component.
             4. Props are immutable and passed from outside.
         
          *State:
+         
             1. Manage inside the component.
             2. Can be changed or updated using setState.
             3. Used to control dynamic behavior.
