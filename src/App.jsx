@@ -26,6 +26,7 @@ function App() {
 
   //Move from Task Status to Resolved & Adjust Counts
   const moveToResolved = (card) => {
+    alert("Successfully Completed");
     setInProgressTasks(inProgressTasks.filter(t => t.id !== card.id));
     setResolvedTasks([...resolvedTasks, card]);
   };
