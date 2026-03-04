@@ -12,7 +12,7 @@
     "id": 2,
     "title": "Payment gateway timeout",
     "description": "Transactions are failing due to timeout errors from the payment provider.",
-    "customer": "XYZ Ltd",
+    "customer": "Eon Solutions",
     "priority": "Critical",
     "status": "In Progress",
     "createdAt": "2026-03-01"

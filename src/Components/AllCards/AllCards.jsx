@@ -1,49 +1,74 @@
 import React, { use } from 'react';
 
-
-const AllCards = ({ fetchPromise }) => {
-
+const AllCards = ({ fetchPromise, addToProgress, inProgressTasks, moveToResolved, resolvedTasks }) => {
     const cardsData = use(fetchPromise);
-    console.log(cardsData);
-    return (
-        <div className="max-w-300 mx-auto flex flex-col sm:flex-row justify-between">
-            <div className='border-right'>
-                <h2 className="text-2xl">Customer Ticktes</h2>
 
-                <div className='sm:grid-cols-2 grid grid-cols-1 gap-6 my-5'>
-                    {
-                        cardsData.map(card => <div className="card w-96 bg-base-100 card-xs shadow-sm">
-                            <div className="card-body ">
-                                <div className='flex justify-between gap-10 object-fill'>
-                                    <h2 className="card-title font-bold text-2xl">{card.title}</h2>
-                                    <button className="btn btn-success rounded-3xl">{card.status}</button>
+    return (
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 p-5">
+            {/* Customer Tickets Section */}
+            <div className='flex-1 border-r pr-5'>
+                <h2 className="text-2xl font-bold mb-5">Customer Tickets</h2>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-6 w-225'>
+                    {cardsData.map(card => (
+                        <div
+                            key={card.id}
+                            onClick={() => addToProgress(card)}
+                            className="card bg-base-100 shadow-md cursor-pointer hover:border-primary border transition-all"
+                        >
+                            <div className="card-body p-4">
+                                <div className='flex justify-between items-center mb-2'>
+                                    <h2 className="card-title font-bold text-lg">{card.title}</h2>
+                                    <span className="badge badge-success rounded-2xl">{card.status}</span>
                                 </div>
-                                <p className='text-[#627382]'>{card.description}</p>
-                                <div className="">
-                                    <div className='flex float-start gap-2'>
-                                        <p className='text-[#627382] text-xl'>#{card.id}</p>
-                                        <span className='text-[15px]'>{card.priority} Priority</span>
+                                <p className='text-sm text-gray-500'>{card.description}</p>
+                                <div className='flex justify-between'>
+                                    <div className='flex gap-2 text-xl'>
+                                        <h3>#{card.id}</h3>
+                                        <span>{card.priority} Priority</span>
                                     </div>
-                                    <div className='flex float-end gap-2'>
-                                        <h6 className='text-[#627382] text-[15px]'>{card.customer}</h6>
-                                        <span className='text-[#627382] text-[15px]'>{card.createdAt}</span>
+                                    <div className='flex gap-2'>
+                                        <h4 className='font-bold'>{card.customer}</h4>
+                                        <span>{card.createdAt}</span>
                                     </div>
                                 </div>
                             </div>
-                        </div>)
-                    }
+                        </div>
+                    ))}
                 </div>
             </div>
 
             {/* Task Section */}
-            <div>
-                <div className='mb-5'>
-                    <h2 className='text-xl font-bold'>Task Status</h2>
-                    <p>Select a ticket to add to Task Status</p>
-                </div>
+            <div className='w-full lg:w-1/3 space-y-10'>
+                {/* 1. Task Status (In-Progress) */}
                 <div>
-                    <h2 className='text-xl font-bold'>Resolved Task</h2>
-                    <p>No resolved tasks yet.</p>
+                    <h2 className='text-xl font-bold border-b pb-2'>Task Status</h2>
+                    {inProgressTasks.length === 0 && <p className="text-gray-400 mt-2">Select a ticket to add.</p>}
+                    <div className="space-y-3 mt-4">
+                        {inProgressTasks.map(task => (
+                            <div key={task.id} className="p-3 bg-blue-50 border rounded-lg items-center">
+                                <span className='text-xl'>{task.title}</span>
+                                <button
+                                    onClick={() => moveToResolved(task)}
+                                    className="btn btn-xs btn-primary w-full mt-3"
+                                >
+                                    Complete
+                                </button>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* 3. Resolved Task */}
+                <div>
+                    <h2 className='text-xl font-bold border-b pb-2'>Resolved Task</h2>
+                    {resolvedTasks.length === 0 && <p className="text-gray-400 mt-2">No resolved tasks yet.</p>}
+                    <div className="space-y-3 mt-4">
+                        {resolvedTasks.map(task => (
+                            <div key={task.id} className="p-3 bg-green-50 border rounded-lg">
+                                <span className="text-gray-500">{task.title}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
