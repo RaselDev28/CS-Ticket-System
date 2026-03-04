@@ -19,12 +19,14 @@ function App() {
 
       {/* Banner Section */}
       <Banner></Banner>
+      
 
     {/* All Ticktes */}
     <Suspense fallback={<div className=" flex items-center justify-center bg-base-100/80 backdrop-blur-sm z-50">
             <span className="loading loading-spinner loading-xl text-primary"></span>
           </div>
 }>
+  
       <AllCards fetchPromise={fetchPromise}></AllCards>
     </Suspense>
     </>
