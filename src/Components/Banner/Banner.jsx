@@ -7,7 +7,7 @@ const Banner = ({ progressCount, resolvedCount }) => {
                 <p className="text-xl opacity-80">In-Progress</p>
                 <h1 className="text-6xl font-bold">{progressCount}</h1>
             </div>
-            <div className="bg-[linear-gradient(45deg,#54CF68_0%,#00827A_100%)] rounded-[10px] text-white w-full py-10 flex flex-col items-center justify-center shadow-lg">
+            <div className="bg-[linear-gradient(45deg,#54CF68_0%,#00827A_100%)] rounded-[10px] text-white w-full py-25 flex flex-col items-center justify-center shadow-lg">
                 <p className="text-xl opacity-80">Resolved</p>
                 <h1 className="text-6xl font-bold">{resolvedCount}</h1>
             </div>
